@@ -4,4 +4,4 @@
 
 ## Installation
 
-Navigate to **Extensions > Extensions Library > Themes** and pick the theme from there.
+Navigate to `Extensions > Extensions Library > Themes` and select the ClassicDark theme.
