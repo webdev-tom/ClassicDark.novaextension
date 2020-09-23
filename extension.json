@@ -1,0 +1,12 @@
+{
+  "identifier": "tomfafard.ClassicDark",
+  "name": "Classic Dark",
+  "vendor": "Tom Fafard",
+  "description": "Theme inspired by dreamweaver's dark theme.",
+  "version": "1.0.0",
+  "bugs": "https://github.com/webdev-tom/ClassicDark.novaextension/issues",
+  "repository": "https://github.com/webdev-tom/ClassicDark.novaextension/issues",
+  "keywords": ["dark", "dreamweaver"],
+  "license": "MIT",
+  "categories": ["themes"]
+}

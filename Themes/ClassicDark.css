@@ -1,0 +1,305 @@
+/**
+  * docs: https://docs.nova.app/extensions/themes
+  * color: http://colorizer.org
+  */
+
+meta {
+  -theme-interface-style: dark;
+  -theme-vibrancy: vibrant;
+  -theme-accent-color: false;
+}
+
+/*
+ * Window styles
+ */
+meta.window {
+  background-color: hsb(0, 0%, 12%);
+  border-color: hsba(0, 0%, 100%, 0.1);
+}
+meta.titlebar {
+  background: linear-gradient(hsb(0, 0%, 26%), hsb(0, 0%, 20%));
+  border-color: hsba(0, 0%, 0%, 0.3);
+  color: hsb(0, 0%, 80%);
+}
+meta.titlebar.inactive {
+  background-color: hsb(0, 0%, 20%);
+}
+
+meta.button {
+  background: linear-gradient(hsb(0, 0%, 30%), hsb(0, 0%, 22%));
+  border: linear-gradient(hsb(0, 0%, 14%), hsb(0, 0%, 12%));
+  color: white;
+}
+meta.button.highlighted {
+  background: linear-gradient(hsb(0, 0%, 40%), hsb(0, 0%, 32%));
+  color: white;
+}
+meta.button.selected {
+  color: white;
+}
+meta.button.highlighted.selected {
+  color: white;
+}
+meta.button.disabled {
+  background: linear-gradient(hsb(0, 0%, 30%), hsb(0, 0%, 22%));
+  border: linear-gradient(hsb(0, 0%, 14%), hsb(0, 0%, 12%));
+  color: hsb(0, 0%, 40%);
+}
+
+meta.textfield {
+  background-color: hsb(0, 0%, 10%);
+  border-color: hsb(0, 0%, 8%);
+}
+
+meta.accent {
+  color: hsb(203, 49%, 83%); /* blue */
+}
+
+/*
+ * Document styles
+ */
+meta.document {
+  background-color: hsb(0, 0%, 16%);
+  border-color: hsba(0, 0%, 100%, 0.1);
+}
+
+meta.document.button {
+  background: linear-gradient(hsb(0, 0%, 26%), hsb(0, 0%, 22%));
+  border: linear-gradient(hsb(0, 0%, 12%), hsb(0, 0%, 8%));
+}
+meta.document.button.disabled {
+  background: linear-gradient(hsba(0, 0%, 26%, 0.3), hsba(0, 0%, 22%, 0.3));
+}
+meta.document.button.highlighted {
+  background: linear-gradient(hsb(0, 0%, 36%), hsb(0, 0%, 32%));
+}
+
+meta.document.textfield {
+  background-color: hsb(0, 0%, 10%);
+  border-color: hsb(0, 0%, 6%);
+}
+
+/* Text */
+meta.text {
+  color: #a9b7c6; /* lightwhite */
+}
+meta.text.invisible {
+  color: #32593d;
+}
+meta.text.selected {
+  background-color: #214283;
+}
+
+/* Cursor */
+meta.cursor {
+  background-color: hsb(0, 0%, 21%);
+}
+
+/* Indentation Guides */
+meta.indentguide {
+  border-color: hsb(0, 0%, 24%);
+}
+
+/* Gutter */
+meta.gutter {
+  color: hsb(0, 0%, 41%); /* gray */
+}
+meta.gutter.selected {
+  background-color: hsb(0, 0%, 30%);
+  color: hsb(0, 0%, 80%);
+}
+
+/*
+ * Syntax styles
+ */
+
+keyword {
+  color: #1fb7cd; /* blue */
+}
+comment {
+  color: #697475; /* gray */
+}
+processing {
+  color: hsb(0, 0%, 41%); /* gray */
+}
+declaration {
+  /* color: hsb(261, 50%, 100%); /* purple */
+}
+bracket {
+  color: #a9b7c6; /* lightwhite */
+}
+operator {
+  color: #a9b7c6; /* lightwhite */
+}
+invalid {
+  background-color: hsb(339, 79%, 91%); /* red */
+  color: hsb(0, 0%, 97%); /* white */
+}
+link {
+  color: #e7b570; /* yellow */
+}
+
+/* Values */
+value.boolean {
+  color: #1fb7cd; /* blue */
+}
+value.null {
+  color: #1fb7cd; /* blue */
+}
+value.number {
+  color: #4dae54; /* green */
+}
+value.entity {
+  color: #1fb7cd; /* blue */
+}
+value.symbol {
+  color: #1fb7cd; /* blue */
+}
+
+/* Identifiers */
+identifier.type {
+  color: #a681d4; /* purple */
+}
+identifier.constant {
+}
+identifier.global,
+identifier.variable {
+  color: #a9b7c6; /* lightwhite */
+}
+identifier.property {
+  color: #a681d4; /* purple */
+}
+identifier.decorator,
+identifier.function,
+identifier.method {
+  color: #a681d4; /* purple */
+}
+identifier.key {
+  color: hsb(203, 49%, 83%); /* blue */
+}
+identifier.argument {
+  color: #a9b7c6; /* lightwhite */
+}
+
+/* Strings */
+string {
+  color: #e7b570; /* yellow */
+}
+string.key {
+  color: #a681d4; /* purple */
+}
+string-template {
+  color: hsb(37, 61%, 93%); /* yellow2 */
+}
+string-template.value {
+  color: hsb(40, 92%, 97%); /* orange */
+}
+regex {
+  color: #e7b570; /* yellow */
+}
+regex.escaped {
+  color: hsb(339, 79%, 91%); /* red */
+}
+cdata {
+  color: hsb(203, 49%, 83%); /* blue */
+}
+
+/* Markup */
+markup.heading {
+  color: #9876aa; /* purple2 */
+  font-style: italic;
+}
+markup.line {
+  color: hsb(37, 97%, 68%); /* orange2 */
+}
+markup.bold {
+  color: hsb(203, 49%, 83%); /* blue */
+  font-weight: bold;
+}
+markup.italic {
+  color: hsb(80, 47%, 76%); /* green */
+  font-style: italic;
+}
+markup.strikethrough {
+  color: hsb(338, 73%, 88%); /* pink */
+}
+markup.list.item {
+  color: hsb(37, 97%, 68%); /* orange2 */
+}
+markup.code {
+  color: #808080;
+}
+
+/* Types */
+definition.class class.name,
+definition.type type.name,
+definition.package package.name,
+definition.enum enum.name,
+definition.union union.name,
+definition.struct struct.name {
+  /* font-weight: bold; */
+  color: #a681d4; /* purple */
+}
+
+/* Members */
+definition.property property.name,
+definition.function function.name,
+definition.method method.name {
+  color: #a9b7c6; /* lightwhite */
+}
+
+/* Tags */
+tag {
+  color: #1fb7cd; /* blue */
+}
+tag.framework {
+  color: hsb(0, 0%, 97%); /* white */
+}
+tag.attribute.name {
+  color: #4dae54; /* green */
+}
+tag.attribute.value {
+  color: #e7b570; /* yellow */
+}
+tag.attribute.value.link {
+  color: #e7b570; /* yellow */
+}
+
+/* Styles */
+style.at {
+  color: #a681d4; /* purple */
+  /* font-weight: bold; */
+}
+style.selector {
+  color: #a9b7c6;
+}
+style.selector.element {
+  /* font-weight: bold; */
+}
+style.selector.identifier.id {
+  color: #1fb7cd; /* blue */
+}
+style.selector.identifier.class {
+  color: #4dae54; /* green */
+}
+style.selector.pseudoclass {
+  color: #d2d4d4; /* lightgray */
+}
+style.selector.pseudoelement {
+  color: #d2d4d4; /* lightgray */
+}
+style.attribute.name {
+  color: #a681d4; /* purple */
+}
+style.value.number {
+  color: #e7b570; /* yellow */
+}
+style.value.color.hex {
+  color: #e7b570; /* yellow */
+}
+style.value.keyword {
+  color: #e7b570; /* blue */
+}
+style.value.color.named {
+  color: #1fb7cd; /* blue */
+}
